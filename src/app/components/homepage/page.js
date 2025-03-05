@@ -111,10 +111,11 @@ export default function LandingPage() {
           <h2 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-600">Meet Our Team</h2>
           <p className="text-gray-400 mt-3">The innovators powering SkyViu’s vision.</p>
           <div className="grid md:grid-cols-4 gap-12 mt-12">
-            <TeamCard name="Alex Carter" title="CEO" image="/team/alex.jpg" />
-            <TeamCard name="Sara Kim" title="CTO" image="/team/sara.jpg" />
-            <TeamCard name="Liam Patel" title="Lead Engineer" image="/team/liam.jpg" />
-            <TeamCard name="Emma Ruiz" title="AI Specialist" image="/team/emma.jpg" />
+            <TeamCard name="Kennedy Wanakacha" title="Frontend & UI/UX Developer" image="/ken.jpeg" />
+            <TeamCard name="Princeton Mwachala" title="Cloud & Backend Engineer" image="/prince.jpeg" />
+            <TeamCard name="Derrick Richards" title="Cybersecurity & DevOps Engineer" image="/aprel.jpeg" />
+            <TeamCard name="John Mwega" title="AI & Embedded Systems Engineer" image="/mwegs.jpeg" />
+            <TeamCard name="Rony Maruga" title="Drone & IoT Engineer" image="/ron.jpeg" />
           </div>
         </div>
       </section>
