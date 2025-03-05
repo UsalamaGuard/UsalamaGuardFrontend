@@ -180,9 +180,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-// Add this to your global CSS (e.g., globals.css) for the glow effect
-/*
-.glow-blue {
-  text-shadow: 0 0 8px rgba(59, 130, 246, 0.8);
-}
-*/
