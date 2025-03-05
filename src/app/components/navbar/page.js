@@ -1,19 +1,37 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdown, setDropdown] = useState(null);
+  const timeoutRef = useRef(null); // Ref to store the timeout ID
 
   const handleMouseEnter = (menu) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current); // Clear any existing timeout
+    }
     setDropdown(menu);
   };
 
   const handleMouseLeave = () => {
-    setDropdown(null);
+    timeoutRef.current = setTimeout(() => {
+      setDropdown(null); // Close dropdown after delay
+    }, 300); // 300ms delay before closing
+  };
+
+  const handleDropdownMouseEnter = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current); // Keep dropdown open when hovering over it
+    }
+  };
+
+  const handleDropdownMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setDropdown(null); // Close dropdown after delay
+    }, 300); // 300ms delay before closing
   };
 
   const toggleDropdown = (menu) => {
@@ -53,14 +71,18 @@ const Navbar = () => {
                 Features <ChevronDown size={18} className="ml-1" />
               </button>
               {dropdown === "features" && (
-                <div className="absolute left-0 mt-2 w-56 bg-gray-800 shadow-xl rounded-lg border border-gray-700 transform transition-all duration-300 ease-in-out">
-                  <Link href="/features/ai-surveillance" className="block px-4 py-2 text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-200">
+                <div
+                  className="absolute left-0 mt-2 w-56 bg-gray-800 shadow-xl rounded-lg border border-gray-700 transform transition-all duration-300 ease-in-out"
+                  onMouseEnter={handleDropdownMouseEnter}
+                  onMouseLeave={handleDropdownMouseLeave}
+                >
+                  <Link href="/AI" className="block px-4 py-2 text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-200">
                     AI Surveillance
                   </Link>
-                  <Link href="/features/live-monitoring" className="block px-4 py-2 text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-200">
+                  <Link href="/live" className="block px-4 py-2 text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-200">
                     Live Monitoring
                   </Link>
-                  <Link href="/features/real-time-alerts" className="block px-4 py-2 text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-200">
+                  <Link href="/realtime" className="block px-4 py-2 text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-200">
                     Real-Time Alerts
                   </Link>
                 </div>
@@ -77,14 +99,18 @@ const Navbar = () => {
                 Technology <ChevronDown size={18} className="ml-1" />
               </button>
               {dropdown === "technology" && (
-                <div className="absolute left-0 mt-2 w-56 bg-gray-800 shadow-xl rounded-lg border border-gray-700 transform transition-all duration-300 ease-in-out">
-                  <Link href="https://aws.amazon.com/" target="_blank" className="block px-4 py-2 text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-200">
+                <div
+                  className="absolute left-0 mt-2 w-56 bg-gray-800 shadow-xl rounded-lg border border-gray-700 transform transition-all duration-300 ease-in-out"
+                  onMouseEnter={handleDropdownMouseEnter}
+                  onMouseLeave={handleDropdownMouseLeave}
+                >
+                  <Link href="/AWS" className="block px-4 py-2 text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-200">
                     AWS Cloud
                   </Link>
-                  <Link href="https://nextjs.org/" target="_blank" className="block px-4 py-2 text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-200">
+                  <Link href="/next" className="block px-4 py-2 text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-200">
                     Next.js Framework
                   </Link>
-                  <Link href="https://tensorflow.org/" target="_blank" className="block px-4 py-2 text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-200">
+                  <Link href="/tensorflow" className="block px-4 py-2 text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-200">
                     AI & TensorFlow
                   </Link>
                 </div>
@@ -129,13 +155,13 @@ const Navbar = () => {
             </button>
             {dropdown === "features" && (
               <div className="flex flex-col space-y-4 w-full text-center">
-                <Link href="/features/ai-surveillance" className="text-gray-300 hover:text-blue-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>
+                <Link href="/AI" className="text-gray-300 hover:text-blue-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>
                   AI Surveillance
                 </Link>
-                <Link href="/features/live-monitoring" className="text-gray-300 hover:text-blue-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>
+                <Link href="/live" className="text-gray-300 hover:text-blue-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>
                   Live Monitoring
                 </Link>
-                <Link href="/features/real-time-alerts" className="text-gray-300 hover:text-blue-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>
+                <Link href="/realtime" className="text-gray-300 hover:text-blue-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>
                   Real-Time Alerts
                 </Link>
               </div>
@@ -150,13 +176,13 @@ const Navbar = () => {
             </button>
             {dropdown === "technology" && (
               <div className="flex flex-col space-y-4 w-full text-center">
-                <Link href="https://aws.amazon.com/" target="_blank" className="text-gray-300 hover:text-blue-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>
+                <Link href="/AWS" className="text-gray-300 hover:text-blue-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>
                   AWS Cloud
                 </Link>
-                <Link href="https://nextjs.org/" target="_blank" className="text-gray-300 hover:text-blue-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>
+                <Link href="/next" className="text-gray-300 hover:text-blue-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>
                   Next.js Framework
                 </Link>
-                <Link href="https://tensorflow.org/" target="_blank" className="text-gray-300 hover:text-blue-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>
+                <Link href="/tensorflow" className="text-gray-300 hover:text-blue-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>
                   AI & TensorFlow
                 </Link>
               </div>
@@ -179,4 +205,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
