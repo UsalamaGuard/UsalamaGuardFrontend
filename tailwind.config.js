@@ -10,11 +10,11 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#2563eb", // Vibrant blue
-        secondary: "#9333ea", // Deep purple
-        accent: "#facc15", // Bright yellow
-        muted: "#64748b", // Subtle text
-        border: "#e5e7eb", // Soft border
+        primary: "#2563eb", 
+        secondary: "#9333ea", 
+        accent: "#facc15",
+        muted: "#64748b", 
+        border: "#e5e7eb", 
       },
 
       screens: {
@@ -72,7 +72,7 @@ module.exports = {
       animation: {
         fadeIn: "fadeIn 0.5s ease-in-out",
         slideUp: "slideUp 0.6s ease-in-out",
-        pageTransition: "pageTransition 0.4s ease-in-out", // New page transition animation
+        pageTransition: "pageTransition 0.4s ease-in-out",
       },
       keyframes: {
         fadeIn: {
@@ -89,16 +89,16 @@ module.exports = {
         },
       },
 
-      // Adding smooth transition properties
+     
       transitionProperty: {
-        'all': 'all', // Ensures all properties can transition smoothly
-        'transform-opacity': 'transform, opacity', // Common combo for page transitions
+        'all': 'all', 
+        'transform-opacity': 'transform, opacity', 
       },
       transitionDuration: {
-        '400': '400ms', // Matches the pageTransition animation duration
+        '400': '400ms', 
       },
       transitionTimingFunction: {
-        'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)', // Smooth, natural easing
+        'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)', 
       },
 
       boxShadow: {
