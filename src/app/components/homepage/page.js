@@ -186,9 +186,9 @@ export default function LandingPage() {
           <h2 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-600">What Our Clients Say</h2>
           <p className="text-gray-400 mt-3">Trusted by innovators worldwide.</p>
           <div className="grid md:grid-cols-3 gap-12 mt-12">
-            <TestimonialCard name="John Doe" role="Security Analyst" text="SkyViu redefined our security strategy with futuristic insights!" />
-            <TestimonialCard name="Jane Smith" role="Operations Manager" text="A game-changer for modern surveillance systems." />
-            <TestimonialCard name="Michael Lee" role="Tech Lead" text="The AI precision is unmatched—truly next-level." />
+            <TestimonialCard name="Caleb Samidoh" role="Security Analyst" text="SkyViu redefined our security strategy with futuristic insights!" />
+            <TestimonialCard name="Yvonne Mwendwa" role="Operations Manager" text="A game-changer for modern surveillance systems." />
+            <TestimonialCard name="Samson Wamunyoro" role="Tech Lead" text="The AI precision is unmatched—truly next-level." />
           </div>
         </div>
       </section>
