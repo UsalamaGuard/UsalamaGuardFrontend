@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Clock, User, ArrowRight, Linkedin, Facebook, Github } from "lucide-react";
-import Navbar from "../components/navbar/page";// Assuming Navbar is in the same directory
+import Navbar from "../components/navbar/page";
 
 const BlogPage = () => {
-  // Sample blog posts data
+
   const blogPosts = [
     {
       id: 1,
