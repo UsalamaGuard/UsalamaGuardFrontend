@@ -102,14 +102,14 @@ export default function ContactPage() {
                 <Phone size={28} className="text-purple-500" />
                 <div>
                   <p className="text-gray-300 font-semibold">Phone</p>
-                  <p className="text-gray-400">+1 (555) 123-4567</p>
+                  <p className="text-gray-400">+254 (757) 448-651</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
                 <MapPin size={28} className="text-blue-400" />
                 <div>
                   <p className="text-gray-300 font-semibold">Address</p>
-                  <p className="text-gray-400">123 Future St, Tech City, TX 75001</p>
+                  <p className="text-gray-400">62000-00200, Juja, Kiambu</p>
                 </div>
               </div>
             </div>
