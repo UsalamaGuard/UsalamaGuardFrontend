@@ -8,22 +8,22 @@ export default function LandingPage() {
   return (
     <main className="bg-gray-900 text-white overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-gray-800 to-black">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-10">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-gray-800 to-black pt-20 sm:pt-16">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="text-left"
+            className="text-center md:text-left w-full md:w-1/2"
           >
-            <h1 className="text-6xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
               SkyViu: AI-Driven Drone Surveillance
             </h1>
-            <p className="mt-4 text-xl text-gray-300">
+            <p className="mt-4 text-lg sm:text-xl text-gray-300">
               Revolutionizing security with cutting-edge AI, drones, and cloud technology for real-time monitoring and intelligent insights.
             </p>
-            <div className="mt-8 flex space-x-6">
-              <Link href="/demo" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-6 py-3 rounded-full font-semibold flex items-center transition-all shadow-lg">
+            <div className="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center md:justify-start">
+              <Link href="/demo" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-6 py-3 rounded-full font-semibold flex items-center justify-center transition-all shadow-lg">
                 Watch Demo <ArrowRight className="ml-2" />
               </Link>
               <Link href="/contact" className="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-full font-semibold transition-all shadow-lg">
@@ -35,13 +35,13 @@ export default function LandingPage() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2 }}
-            className="relative"
+            className="relative w-full md:w-1/2 max-w-md"
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-transparent opacity-50 rounded-full blur-3xl animate-pulse"></div>
             <img
               src="/drone.jpg"
               alt="Drone in Action"
-              className="relative z-10 w-full max-w-md rounded-lg transform rotate-6 shadow-2xl border-4 border-blue-500 hover:rotate-0 transition-transform"
+              className="relative z-10 w-full rounded-lg shadow-2xl border-4 border-blue-500 transform rotate-6 md:rotate-0 hover:rotate-0 transition-transform"
             />
           </motion.div>
         </div>
@@ -206,8 +206,8 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-center">
-        <h2 className="text-5xl font-bold">Secure the Future Today</h2>
+      <section className="py-20 bg-gradient-to-r from-blue-900 to-purple-900 text-center">
+        <h2 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Secure the Future Today</h2>
         <p className="mt-4 text-xl text-gray-200">Join the SkyViu revolution in AI-driven surveillance.</p>
         <div className="mt-8">
           <Link href="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg">
