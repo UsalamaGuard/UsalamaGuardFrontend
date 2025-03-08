@@ -2,189 +2,206 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Users, Cloud, Rocket, Zap, ShieldCheck, Monitor, Linkedin, Github, Facebook } from "lucide-react";
+import { Users, Cloud, Zap, ShieldCheck, Monitor, Mail, Eye, Linkedin, Github, Facebook } from "lucide-react";
 import Navbar from "../components/navbar/page";
 
 const AboutUsPage = () => {
   return (
-    <div className="bg-gray-900 text-white min-h-screen overflow-hidden">
+    <div className="bg-space-black text-stellar-white min-h-screen overflow-hidden">
       {/* Navbar */}
       <Navbar />
 
       {/* About Header */}
-      <section className="relative pt-24 pb-16 bg-gradient-to-br from-blue-900 via-gray-800 to-black">
+      <section className="relative pt-24 pb-16 bg-gradient-to-br from-midnight-blue via-space-black to-galactic-purple">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
+            className="text-5xl md:text-7xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient"
           >
-            About SkyViu
+            About SmartEye
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto"
+            className="mt-4 text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto"
           >
-            Pioneering the future of security with AI-driven drone surveillance, cloud technology, and cutting-edge innovation.
+            Revolutionizing security with IoT-powered surveillance, real-time detection, and instant notifications—all at your fingertips.
           </motion.p>
+        </div>
+        <div className="absolute inset-0 hidden md:block pointer-events-none">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 0.3, scale: 1 }}
+            transition={{ delay: 0.5, duration: 1.5 }}
+            className="absolute top-1/4 left-1/4 w-64 h-64 bg-nebula-blue rounded-full blur-3xl"
+          />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 0.3, scale: 1 }}
+            transition={{ delay: 0.7, duration: 1.5 }}
+            className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-galactic-purple rounded-full blur-3xl"
+          />
         </div>
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 bg-gray-800">
+      <section className="py-20 bg-midnight-blue">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-600">Our Mission</h2>
+          <h2 className="text-4xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">Our Mission</h2>
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-            At SkyViu, we aim to redefine security by integrating advanced artificial intelligence, drone technology, and cloud infrastructure. Our mission is to provide real-time, intelligent surveillance solutions that empower organizations to stay ahead of threats with precision and efficiency.
+            At SmartEye, we’re dedicated to transforming security with a low-cost, IoT-based surveillance system. By combining Raspberry Pi technology, PIR sensors, and SMTP notifications, we deliver real-time intruder detection and peace of mind for homes and businesses worldwide.
           </p>
         </div>
       </section>
 
       {/* Project Overview Section */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-space-black">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">The SkyViu Project</h2>
+          <h2 className="text-4xl font-display font-bold text-center bg-clip-text text-transparent bg-cosmic-gradient">The SmartEye Project</h2>
           <p className="text-gray-400 mt-4 text-center max-w-3xl mx-auto">
-            SkyViu is a comprehensive security platform built from the ground up by a multidisciplinary team of experts. Below, we detail the core components and roles that bring this vision to life.
+            SmartEye is a cutting-edge security solution crafted by a skilled team of innovators. Here’s how our expertise comes together to protect what matters most.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
             {/* AI & Embedded Systems Engineer */}
             <ProjectCard
-              icon={<Zap size={40} className="text-blue-500" />}
+              icon={<Zap size={40} className="text-glow-cyan" />}
               title="AI & Embedded Systems"
-              description="Our AI & Embedded Systems Engineers develop and optimize cutting-edge AI models for real-time object detection on drones. They ensure seamless performance on edge devices like Nvidia Jetson and Raspberry Pi."
+              description="Our AI & Embedded Systems Engineers optimize real-time detection algorithms for the Raspberry Pi, ensuring fast and accurate intruder identification."
               details={[
-                "Train and deploy YOLO and SSD models for anomaly detection.",
-                "Optimize AI algorithms for edge computing efficiency.",
-                "Develop real-time video processing algorithms.",
-                "Integrate AI with drone camera feeds for instant insights."
+                "Develop motion detection logic using PIR sensor data.",
+                "Optimize Python scripts for embedded performance.",
+                "Integrate image capture with AI processing.",
+                "Enhance system efficiency on low-power devices."
               ]}
-              techStack={["TensorFlow", "PyTorch", "OpenCV", "YOLO", "C++", "Python"]}
+              techStack={["Python", "OpenCV", "Raspberry Pi OS", "NumPy"]}
             />
 
-            {/* Drone & IoT Engineer */}
+            {/* Hardware & IoT Engineer */}
             <ProjectCard
-              icon={<Rocket size={40} className="text-purple-500" />}
-              title="Drone & IoT Engineering"
-              description="Our Drone & IoT Engineers design and configure the hardware and connectivity that power SkyViu drones, ensuring robust navigation and seamless cloud integration."
+              icon={<Eye size={40} className="text-nebula-blue" />}
+              title="Hardware & IoT Engineering"
+              description="Our Hardware & IoT Engineers design and integrate the physical components, ensuring robust connectivity and reliable operation."
               details={[
-                "Select and configure cameras, sensors, and GPS hardware.",
-                "Develop navigation and stability control systems.",
-                "Implement wireless communication via MQTT, WebRTC, and 5G.",
-                "Connect drone telemetry to AWS IoT Core for real-time data."
+                "Configure PIR sensors and camera modules.",
+                "Wire hardware to Raspberry Pi GPIO pins.",
+                "Ensure stable power and cooling with DC fans.",
+                "Enable Wi-Fi connectivity for notifications."
               ]}
-              techStack={["DJI SDK", "PX4", "MQTT", "WebRTC", "AWS IoT Core"]}
+              techStack={["Raspberry Pi", "PIR Sensor", "CSI Interface", "GPIO"]}
             />
 
             {/* Cloud & Backend Engineer */}
             <ProjectCard
-              icon={<Cloud size={40} className="text-blue-400" />}
+              icon={<Cloud size={40} className="text-galactic-purple" />}
               title="Cloud & Backend Development"
-              description="Our Cloud & Backend Engineers build the robust infrastructure that supports SkyViu, handling data storage, real-time streaming, and API development."
+              description="Our Cloud & Backend Engineers manage data flow and notifications, leveraging SMTP for seamless communication."
               details={[
-                "Set up AWS services like S3, Lambda, and Kinesis.",
-                "Develop RESTful APIs for alerts and data management.",
-                "Enable real-time streaming with WebSockets.",
-                "Secure data storage using DynamoDB and PostgreSQL."
+                "Set up SMTP servers for email alerts.",
+                "Handle image storage and retrieval.",
+                "Develop backend scripts for system automation.",
+                "Secure data transmission over the internet."
               ]}
-              techStack={["AWS Lambda", "S3", "Node.js", "FastAPI", "WebSockets"]}
+              techStack={["SMTP", "Python", "Raspberry Pi Wi-Fi", "Email APIs"]}
             />
 
             {/* Frontend & UI/UX Developer */}
             <ProjectCard
-              icon={<Monitor size={40} className="text-purple-400" />}
+              icon={<Monitor size={40} className="text-glow-cyan" />}
               title="Frontend & UI/UX Design"
-              description="Our Frontend & UI/UX Developers craft intuitive, responsive dashboards that bring SkyViu’s surveillance data to life for security teams."
+              description="Our Frontend & UI/UX Developers create intuitive interfaces to monitor and manage SmartEye’s features."
               details={[
-                "Build interactive dashboards for real-time monitoring.",
-                "Integrate live drone feeds and anomaly alerts.",
-                "Implement WebSockets for seamless live updates.",
-                "Design responsive UI/UX for mobile and desktop."
+                "Design dashboards for real-time alerts.",
+                "Integrate email notification previews.",
+                "Ensure responsive design across devices.",
+                "Craft user-friendly setup guides."
               ]}
-              techStack={["React.js", "Next.js", "WebSockets", "Tailwind CSS"]}
+              techStack={["React.js", "Next.js", "Tailwind CSS", "Framer Motion"]}
             />
 
             {/* Cybersecurity & DevOps Engineer */}
             <ProjectCard
-              icon={<ShieldCheck size={40} className="text-blue-500" />}
+              icon={<ShieldCheck size={40} className="text-nebula-blue" />}
               title="Cybersecurity & DevOps"
-              description="Our Cybersecurity & DevOps Engineers ensure SkyViu’s systems are secure, scalable, and efficiently deployed, protecting data and optimizing performance."
+              description="Our Cybersecurity & DevOps Engineers secure the system and streamline deployment for reliability and scalability."
               details={[
-                "Secure data transmission with TLS, VPN, and AES encryption.",
-                "Implement user authentication via OAuth and JWT.",
-                "Monitor system performance and security threats.",
-                "Automate AWS deployments with CI/CD pipelines."
+                "Encrypt SMTP credentials and data.",
+                "Monitor system logs for security threats.",
+                "Automate deployment on Raspberry Pi.",
+                "Optimize uptime and performance."
               ]}
-              techStack={["AWS IAM", "JWT", "Docker", "Kubernetes", "Terraform"]}
+              techStack={["SSL/TLS", "Python Logging", "Docker", "Bash"]}
             />
           </div>
         </div>
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-gray-800">
+      <section className="py-20 bg-midnight-blue">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-600">Our Team</h2>
+          <h2 className="text-4xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">Our Team</h2>
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-            Meet the visionaries behind SkyViu, blending expertise in AI, drones, cloud tech, and security to deliver a world-class solution.
+            Meet the brilliant minds behind SmartEye, uniting expertise in IoT, AI, and security to build a safer future.
           </p>
           <div className="grid md:grid-cols-4 gap-12 mt-12">
             <TeamCard name="Kennedy Wanakacha" title="Frontend & UI/UX Developer" image="/ken.jpeg" />
             <TeamCard name="Princeton Mwachala" title="Cloud & Backend Engineer" image="/prince.jpeg" />
             <TeamCard name="Derrick Richards" title="Cybersecurity & DevOps Engineer" image="/aprel.jpeg" />
             <TeamCard name="John Mwega" title="AI & Embedded Systems Engineer" image="/mwegs.jpeg" />
-            <TeamCard name="Rony Maruga" title="Drone & IoT Engineer" image="/ron.jpeg" />
+            <TeamCard name="Rony Maruga" title="Hardware & IoT Engineer" image="/ron.jpeg" />
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-purple-900 text-center">
-        <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Join the Future</h2>
-        <p className="mt-4 text-lg text-gray-200">Discover how SkyViu can transform your security strategy.</p>
+      <section className="py-20 bg-gradient-to-r from-nebula-blue to-galactic-purple text-center">
+        <h2 className="text-4xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">Secure Tomorrow</h2>
+        <p className="mt-4 text-lg text-gray-200">Learn how SmartEye can protect your world today.</p>
         <div className="mt-8">
-          <Link href="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg">
+          <Link
+            href="/contact"
+            className="bg-stellar-white text-space-black px-8 py-4 rounded-full font-semibold hover:bg-gray-200 transition-all shadow-glow-md hover:shadow-glow-lg"
+          >
             Get in Touch
           </Link>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-black text-gray-400">
+      <footer className="py-12 bg-space-black text-gray-400">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-2xl font-bold text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">SkyViu</h3>
-            <p className="mt-2">Pioneering the future of security with AI and drone technology.</p>
+            <h3 className="text-2xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">SmartEye</h3>
+            <p className="mt-2">Empowering security with IoT innovation.</p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold text-white">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-stellar-white">Quick Links</h4>
             <ul className="mt-2 space-y-2">
-              <li><Link href="/about" className="hover:text-blue-400 transition-colors">About Us</Link></li>
-              <li><Link href="/demo" className="hover:text-blue-400 transition-colors">Demo</Link></li>
-              <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
+              <li><Link href="/about" className="hover:text-glow-cyan transition-colors">About Us</Link></li>
+              <li><Link href="/demo" className="hover:text-glow-cyan transition-colors">Demo</Link></li>
+              <li><Link href="/contact" className="hover:text-glow-cyan transition-colors">Contact</Link></li>
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold text-white">Connect With Us</h4>
+            <h4 className="text-lg font-semibold text-stellar-white">Connect With Us</h4>
             <div className="mt-4 flex space-x-6 justify-center md:justify-start">
-              <a href="https://linkedin.com" target="_blank" className="hover:text-blue-400 transition-colors">
+              <a href="https://linkedin.com" target="_blank" className="hover:text-nebula-blue transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="https://facebook.com" target="_blank" className="hover:text-blue-400 transition-colors">
+              <a href="https://facebook.com" target="_blank" className="hover:text-nebula-blue transition-colors">
                 <Facebook size={24} />
               </a>
-              <a href="https://github.com" target="_blank" className="hover:text-blue-400 transition-colors">
+              <a href="https://github.com" target="_blank" className="hover:text-nebula-blue transition-colors">
                 <Github size={24} />
               </a>
             </div>
           </div>
         </div>
-        <div className="mt-8 text-center border-t border-gray-800 pt-4">
-          <p>© 2025 SkyViu. All rights reserved.</p>
-          <p className="text-sm mt-1">Designed with passion for a safer tomorrow.</p>
+        <div className="mt-8 text-center border-t border-cosmic-gray pt-4">
+          <p>© 2025 SmartEye. All rights reserved.</p>
+          <p className="text-sm mt-1">Crafted with vision for a safer world.</p>
         </div>
       </footer>
     </div>
@@ -195,10 +212,10 @@ const AboutUsPage = () => {
 const ProjectCard = ({ icon, title, description, details, techStack }) => (
   <motion.div
     whileHover={{ scale: 1.05 }}
-    className="p-6 bg-gray-800 shadow-lg rounded-xl border border-gray-700 hover:shadow-blue-500/20 transition-all"
+    className="p-6 bg-midnight-blue shadow-glow-md rounded-2xl border border-cosmic-gray hover:shadow-glow-lg transition-all"
   >
     <div className="flex items-center justify-center mb-4">{icon}</div>
-    <h3 className="text-2xl font-semibold text-white text-center">{title}</h3>
+    <h3 className="text-2xl font-display font-semibold text-stellar-white text-center">{title}</h3>
     <p className="text-gray-400 mt-2">{description}</p>
     <ul className="mt-4 text-gray-400 list-disc list-inside">
       {details.map((item, index) => (
@@ -208,7 +225,7 @@ const ProjectCard = ({ icon, title, description, details, techStack }) => (
     <p className="mt-4 text-gray-300 font-semibold">Tech Stack:</p>
     <div className="mt-2 flex flex-wrap gap-2">
       {techStack.map((tech, index) => (
-        <span key={index} className="bg-blue-600 text-white px-2 py-1 rounded-full text-sm">{tech}</span>
+        <span key={index} className="bg-nebula-blue text-stellar-white px-2 py-1 rounded-full text-sm">{tech}</span>
       ))}
     </div>
   </motion.div>
@@ -217,10 +234,10 @@ const ProjectCard = ({ icon, title, description, details, techStack }) => (
 const TeamCard = ({ name, title, image }) => (
   <motion.div
     whileHover={{ scale: 1.1 }}
-    className="p-6 bg-gray-900 shadow-lg rounded-xl text-center border border-gray-700 hover:shadow-purple-500/20 transition-all"
+    className="p-6 bg-space-black shadow-glow-md rounded-2xl border border-cosmic-gray hover:shadow-glow-lg transition-all"
   >
-    <img src={image} alt={name} className="w-32 h-32 mx-auto rounded-full border-2 border-blue-500" />
-    <h3 className="mt-4 text-xl font-semibold text-white">{name}</h3>
+    <img src={image} alt={name} className="w-32 h-32 mx-auto rounded-full border-2 border-glow-cyan object-cover" />
+    <h3 className="mt-4 text-xl font-display font-semibold text-stellar-white">{name}</h3>
     <p className="text-gray-400">{title}</p>
   </motion.div>
 );
