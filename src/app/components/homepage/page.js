@@ -146,8 +146,8 @@ export default function LandingPage() {
               text="Affordable and effective—perfect for my supermarket."
             />
             <TestimonialCard
-              name="Tech Enthusiast"
-              role="Wuod Nyakach"
+              name="Wuod Nyakach"
+              role="Tech Enthusiast"
               text="The IoT setup is simple and the AI detection is spot-on."
             />
           </div>
