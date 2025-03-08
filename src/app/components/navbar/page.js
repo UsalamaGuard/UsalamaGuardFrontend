@@ -43,14 +43,14 @@ const Navbar = () => {
     <nav className="fixed w-full z-50 bg-gradient-to-r from-space-black via-midnight-blue to-space-black shadow-glow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo & Name */}
+        
           <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center">
               <Image
-                src="/logs.jpeg" // Ensure this file exists in /public/
+                src="/logs.jpeg"
                 alt="SmartEye Logo"
-                width={40} // Fixed width for consistency
-                height={40} // Fixed height for consistency
+                width={40} 
+                height={40} 
                 className="rounded-full border-2 border-nebula-blue p-1 bg-stellar-white object-cover"
               />
               <span className="text-xl font-display font-bold text-stellar-white bg-clip-text text-transparent bg-cosmic-gradient ml-2">
@@ -59,7 +59,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 ml-auto items-center">
             <Link
               href="/"
@@ -74,7 +73,7 @@ const Navbar = () => {
               About
             </Link>
 
-            {/* Features Dropdown */}
+ 
             <div
               className="relative group"
               onMouseEnter={() => handleMouseEnter("features")}
@@ -111,7 +110,7 @@ const Navbar = () => {
               )}
             </div>
 
-            {/* Technology Dropdown */}
+            
             <div
               className="relative group"
               onMouseEnter={() => handleMouseEnter("technology")}
@@ -162,7 +161,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-stellar-white hover:text-glow-cyan"
             onClick={() => setIsOpen(!isOpen)}
@@ -172,7 +170,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+   
       {isOpen && (
         <div className="md:hidden bg-space-black shadow-glow-md absolute top-16 left-0 w-full border-t border-cosmic-gray">
           <div className="flex flex-col items-center py-6 space-y-6">
@@ -191,7 +189,6 @@ const Navbar = () => {
               About
             </Link>
 
-            {/* Features Dropdown (Mobile) */}
             <button
               className="text-stellar-white hover:text-glow-cyan flex items-center transition-colors duration-300"
               onClick={() => toggleDropdown("features")}
@@ -224,7 +221,7 @@ const Navbar = () => {
               </div>
             )}
 
-            {/* Technology Dropdown (Mobile) */}
+      
             <button
               className="text-stellar-white hover:text-glow-cyan flex items-center transition-colors duration-300"
               onClick={() => toggleDropdown("technology")}
