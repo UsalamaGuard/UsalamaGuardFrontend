@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center">
               <Image
-                src="/logs.jpeg"
+                src="/hoj.jpeg"
                 alt="UsalamaAiGuard Logo"
                 width={40} 
                 height={40} 
