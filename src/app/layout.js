@@ -13,9 +13,9 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "SmartEye",
+  title: "UsalamaAiGuard",
   description: 
-    "SmartEye is an IoT-powered surveillance system using Raspberry Pi, PIR sensors, and SMTP for real-time intruder detection and notifications.",
+    "UsalamaAiGuard is an IoT-powered surveillance system using Raspberry Pi, PIR sensors, and SMTP for real-time intruder detection and notifications.",
 };
 
 
