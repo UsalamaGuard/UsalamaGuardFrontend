@@ -18,7 +18,7 @@ export default function PirSensorPage() {
             PIR Sensor
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-            The Passive Infrared (PIR) sensor forms the backbone of SmartEye’s motion detection, delivering precise and reliable intruder identification with minimal effort.
+            The Passive Infrared (PIR) sensor forms the backbone of UsalamaAiGuard’s motion detection, delivering precise and reliable intruder identification with minimal effort.
           </p>
         </motion.div>
 
@@ -32,7 +32,7 @@ export default function PirSensorPage() {
             <Eye size={48} className="text-glow-cyan mb-4" />
             <h2 className="text-2xl font-display font-semibold">How It Works</h2>
             <p className="text-gray-400 mt-4">
-              The PIR sensor excels at detecting infrared radiation emitted by moving objects, such as a person crossing its field of view. This compact, low-power device uses dual pyroelectric elements to measure changes in IR intensity. When motion disrupts the balance—say, an intruder steps into the monitored area—it generates a signal that’s sent to the Raspberry Pi. This triggers the next steps in SmartEye’s security sequence, like capturing an image and sending an alert, all in real-time.
+              The PIR sensor excels at detecting infrared radiation emitted by moving objects, such as a person crossing its field of view. This compact, low-power device uses dual pyroelectric elements to measure changes in IR intensity. When motion disrupts the balance—say, an intruder steps into the monitored area—it generates a signal that’s sent to the Raspberry Pi. This triggers the next steps in UsalamaAiGuard’s security sequence, like capturing an image and sending an alert, all in real-time.
             </p>
           </div>
           <div className="bg-midnight-blue p-6 rounded-2xl shadow-glow-md">
@@ -99,7 +99,7 @@ export default function PirSensorPage() {
             Why It Matters
           </h2>
           <p className="text-lg text-gray-300 max-w-4xl mx-auto">
-            The PIR sensor is the first line of defense in SmartEye’s security system, enabling proactive detection of intrusions with unmatched efficiency. Its affordability and precision make it an ideal choice for protecting homes, businesses, and offices, ensuring that advanced motion sensing isn’t just a luxury—it’s a practical reality for everyone. By catching threats early, it sets the stage for a safer, smarter world.
+            The PIR sensor is the first line of defense in UsalamaAiGuard’s security system, enabling proactive detection of intrusions with unmatched efficiency. Its affordability and precision make it an ideal choice for protecting homes, businesses, and offices, ensuring that advanced motion sensing isn’t just a luxury—it’s a practical reality for everyone. By catching threats early, it sets the stage for a safer, smarter world.
           </p>
         </motion.div>
 

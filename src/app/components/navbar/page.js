@@ -48,13 +48,13 @@ const Navbar = () => {
             <Link href="/" className="flex items-center">
               <Image
                 src="/logs.jpeg"
-                alt="SmartEye Logo"
+                alt="UsalamaAiGuard Logo"
                 width={40} 
                 height={40} 
                 className="rounded-full border-2 border-nebula-blue p-1 bg-stellar-white object-cover"
               />
               <span className="text-xl font-display font-bold text-stellar-white bg-clip-text text-transparent bg-cosmic-gradient ml-2">
-                SmartEye
+           UsalamaAiGuard
               </span>
             </Link>
           </div>

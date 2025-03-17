@@ -18,7 +18,7 @@ export default function NotificationsPage() {
             Email Notifications
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-            SmartEye sends instant email alerts with intruder images, empowering users to respond quickly and effectively from anywhere in the world.
+          UsalamaAiGuard sends instant email alerts with intruder images, empowering users to respond quickly and effectively from anywhere in the world.
           </p>
         </motion.div>
 

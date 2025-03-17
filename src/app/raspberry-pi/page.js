@@ -18,7 +18,7 @@ export default function RaspberryPiPage() {
             Raspberry Pi
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-            The Raspberry Pi acts as the brilliant core of SmartEye, seamlessly orchestrating motion detection, image capture, and email notifications in a compact, affordable package.
+            The Raspberry Pi acts as the brilliant core of UsalamaAiGuard, seamlessly orchestrating motion detection, image capture, and email notifications in a compact, affordable package.
           </p>
         </motion.div>
 
@@ -33,7 +33,7 @@ export default function RaspberryPiPage() {
             <Camera size={48} className="text-nebula-blue mb-4" />
             <h2 className="text-2xl font-display font-semibold">How It Works</h2>
             <p className="text-gray-400 mt-4">
-              The Raspberry Pi 3 Model B, a credit-card-sized single-board computer, powers SmartEye by integrating key components: the PIR sensor, camera module, and SMTP server. When the PIR sensor detects motion, the Pi’s embedded Python scripts spring into action, triggering the camera to snap an image. It then processes the image and sends an email alert via the SMTP server, all in a matter of seconds. This tiny powerhouse coordinates every step of the surveillance process with precision.
+              The Raspberry Pi 3 Model B, a credit-card-sized single-board computer, powers UsalamaAiGuard by integrating key components: the PIR sensor, camera module, and SMTP server. When the PIR sensor detects motion, the Pi’s embedded Python scripts spring into action, triggering the camera to snap an image. It then processes the image and sends an email alert via the SMTP server, all in a matter of seconds. This tiny powerhouse coordinates every step of the surveillance process with precision.
             </p>
           </div>
           <div className="bg-midnight-blue p-6 rounded-2xl shadow-glow-md">
@@ -101,7 +101,7 @@ export default function RaspberryPiPage() {
             Why It Matters
           </h2>
           <p className="text-lg text-gray-300 max-w-4xl mx-auto">
-            The Raspberry Pi transforms SmartEye into a cost-effective, scalable security solution, bringing advanced surveillance to homes and businesses without breaking the bank. As the central hub, it ties together detection, capture, and notifications, offering a DIY-friendly platform that’s powerful yet approachable. It’s the key to making smart security a reality for everyone.
+            The Raspberry Pi transforms UsalamaAiGuard into a cost-effective, scalable security solution, bringing advanced surveillance to homes and businesses without breaking the bank. As the central hub, it ties together detection, capture, and notifications, offering a DIY-friendly platform that’s powerful yet approachable. It’s the key to making smart security a reality for everyone.
           </p>
         </motion.div>
 

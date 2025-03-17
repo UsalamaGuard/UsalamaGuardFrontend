@@ -16,7 +16,7 @@ export default function LandingPage() {
             className="text-center md:text-left w-full md:w-1/2"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">
-              SmartEye: IoT-Powered Surveillance
+            UsalamaAiGuard: IoT-Powered Surveillance
             </h1>
             <p className="mt-4 text-lg sm:text-xl text-gray-300">
               Secure your home with affordable IoT cameras and AI vision models for real-time intruder detection and email notifications.
@@ -163,7 +163,7 @@ export default function LandingPage() {
           <p className="text-gray-400 mt-3">Got questions? We’ve got answers.</p>
           <div className="mt-12 space-y-6 max-w-3xl mx-auto text-left">
             <FAQItem
-              question="What makes SmartEye unique?"
+              question="What makes UsalamaAiGuard unique?"
               answer="Our low-cost IoT cameras and AI vision deliver real-time security alerts via email."
             />
             <FAQItem
@@ -183,7 +183,7 @@ export default function LandingPage() {
         <h2 className="text-5xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">
           Secure Your Space Today
         </h2>
-        <p className="mt-4 text-xl text-gray-300">Join the SmartEye revolution in IoT security.</p>
+        <p className="mt-4 text-xl text-gray-300">Join the UsalamaAiGuard revolution in IoT security.</p>
         <div className="mt-8">
           <Link
             href="/contact"
@@ -198,7 +198,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
           <div>
             <h3 className="text-2xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">
-              SmartEye
+            UsalamaAiGuard
             </h3>
             <p className="mt-2">Affordable IoT surveillance for a safer tomorrow.</p>
           </div>
@@ -238,7 +238,7 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="mt-8 text-center border-t border-cosmic-gray pt-4">
-          <p>© 2025 SmartEye. All rights reserved.</p>
+          <p>© 2025 UsalamaAiGuard. All rights reserved.</p>
           <p className="text-sm mt-1">Designed for affordable security innovation.</p>
         </div>
       </footer>

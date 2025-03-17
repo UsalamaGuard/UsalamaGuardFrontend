@@ -20,7 +20,7 @@ const AboutUsPage = () => {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient"
           >
-            About SmartEye
+            About UsalamaAiGuard
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ const AboutUsPage = () => {
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">Our Mission</h2>
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-            At SmartEye, we’re dedicated to transforming security with a low-cost, IoT-based surveillance system. By combining Raspberry Pi technology, PIR sensors, and SMTP notifications, we deliver real-time intruder detection and peace of mind for homes and businesses worldwide.
+            At UsalamaAiGuard, we’re dedicated to transforming security with a low-cost, IoT-based surveillance system. By combining Raspberry Pi technology, PIR sensors, and SMTP notifications, we deliver real-time intruder detection and peace of mind for homes and businesses worldwide.
           </p>
         </div>
       </section>
@@ -60,9 +60,9 @@ const AboutUsPage = () => {
       {/* Project Overview Section */}
       <section className="py-20 bg-space-black">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-display font-bold text-center bg-clip-text text-transparent bg-cosmic-gradient">The SmartEye Project</h2>
+          <h2 className="text-4xl font-display font-bold text-center bg-clip-text text-transparent bg-cosmic-gradient">The UsalamaAiGuard Project</h2>
           <p className="text-gray-400 mt-4 text-center max-w-3xl mx-auto">
-            SmartEye is a cutting-edge security solution crafted by a skilled team of innovators. Here’s how our expertise comes together to protect what matters most.
+          UsalamaAiGuard is a cutting-edge security solution crafted by a skilled team of innovators. Here’s how our expertise comes together to protect what matters most.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
             {/* AI & Embedded Systems Engineer */}
@@ -143,7 +143,7 @@ const AboutUsPage = () => {
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">Our Team</h2>
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-            Meet the brilliant minds behind SmartEye, uniting expertise in IoT, AI, and security to build a safer future.
+            Meet the brilliant minds behind UsalamaAiGuard, uniting expertise in IoT, AI, and security to build a safer future.
           </p>
           <div className="grid md:grid-cols-4 gap-12 mt-12">
             <TeamCard name="Kennedy Wanakacha" title="Frontend & UI/UX Developer" image="/ken.jpeg" />
@@ -158,7 +158,7 @@ const AboutUsPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-nebula-blue to-galactic-purple text-center">
         <h2 className="text-4xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">Secure Tomorrow</h2>
-        <p className="mt-4 text-lg text-gray-200">Learn how SmartEye can protect your world today.</p>
+        <p className="mt-4 text-lg text-gray-200">Learn how UsalamaAiGuard can protect your world today.</p>
         <div className="mt-8">
           <Link
             href="/contact"
@@ -173,7 +173,7 @@ const AboutUsPage = () => {
       <footer className="py-12 bg-space-black text-gray-400">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-2xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">SmartEye</h3>
+            <h3 className="text-2xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">UsalamaAiGuard</h3>
             <p className="mt-2">Empowering security with IoT innovation.</p>
           </div>
           <div>
@@ -200,7 +200,7 @@ const AboutUsPage = () => {
           </div>
         </div>
         <div className="mt-8 text-center border-t border-cosmic-gray pt-4">
-          <p>© 2025 SmartEye. All rights reserved.</p>
+          <p>© 2025 UsalamaAiGuard. All rights reserved.</p>
           <p className="text-sm mt-1">Crafted with vision for a safer world.</p>
         </div>
       </footer>

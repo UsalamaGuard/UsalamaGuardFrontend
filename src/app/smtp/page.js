@@ -18,7 +18,7 @@ export default function SmtpPage() {
             SMTP Server
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-            The SMTP server drives SmartEye’s notification system, delivering intruder images to your inbox with blazing speed and rock-solid reliability.
+            The SMTP server drives UsalamaAiGuard’s notification system, delivering intruder images to your inbox with blazing speed and rock-solid reliability.
           </p>
         </motion.div>
 
@@ -33,7 +33,7 @@ export default function SmtpPage() {
             <Mail size={48} className="text-galactic-purple mb-4" />
             <h2 className="text-2xl font-display font-semibold">How It Works</h2>
             <p className="text-gray-400 mt-4">
-              The Simple Mail Transfer Protocol (SMTP) server is the final link in SmartEye’s security chain. After the Raspberry Pi captures an intruder’s image, it taps into the SMTP server using Python scripts. The system quickly composes an email—complete with the image as an attachment—and sends it to your registered email address. This process happens in a flash, ensuring you’re alerted almost instantly after detection, all powered by the Pi’s internet connection.
+              The Simple Mail Transfer Protocol (SMTP) server is the final link in UsalamaAiGuard’s security chain. After the Raspberry Pi captures an intruder’s image, it taps into the SMTP server using Python scripts. The system quickly composes an email—complete with the image as an attachment—and sends it to your registered email address. This process happens in a flash, ensuring you’re alerted almost instantly after detection, all powered by the Pi’s internet connection.
             </p>
           </div>
           <div className="bg-midnight-blue p-6 rounded-2xl shadow-glow-md">
@@ -101,7 +101,7 @@ export default function SmtpPage() {
             Why It Matters
           </h2>
           <p className="text-lg text-gray-300 max-w-4xl mx-auto">
-            The SMTP server is the lifeline that keeps you connected to your SmartEye system, delivering critical alerts wherever you are. By providing fast, reliable notifications without extra costs or complexity, it makes advanced security accessible to everyone. This feature ensures you’re always in control, turning detection into action and enhancing safety with every email sent.
+            The SMTP server is the lifeline that keeps you connected to your UsalamaAiGuard system, delivering critical alerts wherever you are. By providing fast, reliable notifications without extra costs or complexity, it makes advanced security accessible to everyone. This feature ensures you’re always in control, turning detection into action and enhancing safety with every email sent.
           </p>
         </motion.div>
 

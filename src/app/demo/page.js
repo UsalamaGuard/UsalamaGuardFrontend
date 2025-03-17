@@ -20,7 +20,7 @@ export default function DemoPage() {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient"
           >
-            SmartEye Demo
+            UsalamaAiGuard Demo
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ export default function DemoPage() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto"
           >
-            Witness the power of IoT-driven surveillance in action—real-time detection, capture, and notifications with SmartEye.
+            Witness the power of IoT-driven surveillance in action—real-time detection, capture, and notifications with UsalamaAiGuard.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -62,9 +62,9 @@ export default function DemoPage() {
 
       <section className="py-20 bg-midnight-blue">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">See SmartEye at Work</h2>
+          <h2 className="text-4xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">See UsalamaAiGuard at Work</h2>
           <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-            Explore how SmartEye’s Raspberry Pi, PIR sensors, and SMTP notifications deliver real-time security solutions.
+            Explore how UsalamaAiGuard’s Raspberry Pi, PIR sensors, and SMTP notifications deliver real-time security solutions.
           </p>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -91,7 +91,7 @@ export default function DemoPage() {
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">Demo Highlights</h2>
           <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-            Dive into three core demos showcasing SmartEye’s capabilities with individual video previews.
+            Dive into three core demos showcasing UsalamaAiGuard’s capabilities with individual video previews.
           </p>
           <div className="grid md:grid-cols-3 gap-12 mt-12">
 
@@ -124,7 +124,7 @@ export default function DemoPage() {
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">Powered by Smart Tech</h2>
           <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-            Our demos highlight the innovative technologies driving SmartEye’s efficiency and reliability.
+            Our demos highlight the innovative technologies driving UsalamaAiGuard’s efficiency and reliability.
           </p>
           <div className="grid md:grid-cols-3 gap-12 mt-12">
             <TechCard
@@ -149,7 +149,7 @@ export default function DemoPage() {
 
       <section className="py-20 bg-gradient-to-r from-nebula-blue to-galactic-purple text-center">
         <h2 className="text-4xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">Ready to Secure Your Space?</h2>
-        <p className="mt-4 text-lg text-gray-200">Schedule a personalized demo to explore SmartEye’s full potential.</p>
+        <p className="mt-4 text-lg text-gray-200">Schedule a personalized demo to explore UsalamaAiGuard’s full potential.</p>
         <div className="mt-8">
           <Link
             href="/contact"
@@ -164,7 +164,7 @@ export default function DemoPage() {
       <footer className="py-12 bg-space-black text-gray-400">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-2xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">SmartEye</h3>
+            <h3 className="text-2xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">UsalamaAiGuard</h3>
             <p className="mt-2">Empowering security with IoT innovation.</p>
           </div>
           <div>
@@ -185,7 +185,7 @@ export default function DemoPage() {
           </div>
         </div>
         <div className="mt-8 text-center border-t border-cosmic-gray pt-4">
-          <p>© 2025 SmartEye. All rights reserved.</p>
+          <p>© 2025 UsalamaAiGuard. All rights reserved.</p>
           <p className="text-sm mt-1">Crafted with vision for a safer world.</p>
         </div>
       </footer>

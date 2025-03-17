@@ -18,7 +18,7 @@ export default function DetectionPage() {
             Intruder Detection
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-            SmartEye’s intruder detection system uses advanced Passive Infrared (PIR) sensors to spot unauthorized movement in real-time, setting the stage for a rapid and effective security response.
+          UsalamaAiGuard’s intruder detection system uses advanced Passive Infrared (PIR) sensors to spot unauthorized movement in real-time, setting the stage for a rapid and effective security response.
           </p>
         </motion.div>
 
@@ -33,7 +33,7 @@ export default function DetectionPage() {
             <Eye size={48} className="text-nebula-blue mb-4" />
             <h2 className="text-2xl font-display font-semibold">How It Works</h2>
             <p className="text-gray-400 mt-4">
-              The PIR sensor operates by detecting infrared radiation emitted by moving objects, such as a person entering a monitored area. It continuously measures the intensity of IR radiation and identifies significant changes—indicating motion. When triggered, the sensor sends an immediate signal to the Raspberry Pi, initiating the next steps in SmartEye’s security process, like image capture and notifications. This technology ensures reliable detection without constant power drain.
+              The PIR sensor operates by detecting infrared radiation emitted by moving objects, such as a person entering a monitored area. It continuously measures the intensity of IR radiation and identifies significant changes—indicating motion. When triggered, the sensor sends an immediate signal to the Raspberry Pi, initiating the next steps in UsalamaAiGuard’s security process, like image capture and notifications. This technology ensures reliable detection without constant power drain.
             </p>
           </div>
           <div className="bg-midnight-blue p-6 rounded-2xl shadow-glow-md">
@@ -102,7 +102,7 @@ export default function DetectionPage() {
             Why It Matters
           </h2>
           <p className="text-lg text-gray-300 max-w-4xl mx-auto">
-            Intruder detection is the backbone of SmartEye’s mission to secure homes, shops, and offices. By catching unauthorized movement instantly, it protects against burglars and unknown individuals, offering peace of mind at a fraction of the cost of traditional systems. This feature makes advanced surveillance accessible, empowering users to safeguard their spaces with confidence.
+            Intruder detection is the backbone of UsalamaAiGuard’s mission to secure homes, shops, and offices. By catching unauthorized movement instantly, it protects against burglars and unknown individuals, offering peace of mind at a fraction of the cost of traditional systems. This feature makes advanced surveillance accessible, empowering users to safeguard their spaces with confidence.
           </p>
         </motion.div>
 

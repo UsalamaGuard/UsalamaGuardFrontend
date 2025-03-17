@@ -36,7 +36,7 @@ export default function ContactPage() {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient"
           >
-            Contact SmartEye
+            Contact UsalamaAiGuard
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -44,7 +44,7 @@ export default function ContactPage() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto"
           >
-            Reach out to learn how SmartEye’s IoT surveillance can secure your space with real-time detection and notifications.
+            Reach out to learn how UsalamaAiGuard’s IoT surveillance can secure your space with real-time detection and notifications.
           </motion.p>
         </div>
         <div className="absolute inset-0 hidden md:block pointer-events-none">
@@ -74,7 +74,7 @@ export default function ContactPage() {
             className="bg-space-black p-8 rounded-2xl shadow-glow-md border border-cosmic-gray"
           >
             <h2 className="text-3xl font-display font-semibold bg-clip-text text-transparent bg-cosmic-gradient">Send Us a Message</h2>
-            <p className="mt-2 text-gray-400">Questions about SmartEye? Let us know how we can assist you.</p>
+            <p className="mt-2 text-gray-400">Questions about UsalamaAiGuard? Let us know how we can assist you.</p>
             {submitted ? (
               <p className="mt-6 text-glow-cyan">Thank you! We’ll get back to you soon.</p>
             ) : (
@@ -138,7 +138,7 @@ export default function ContactPage() {
                 <Mail size={28} className="text-glow-cyan" />
                 <div>
                   <p className="text-gray-300 font-semibold">Email</p>
-                  <p className="text-gray-400">support@smarteye.io</p>
+                  <p className="text-gray-400">support@usalamaaiguard.io</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
@@ -190,7 +190,7 @@ export default function ContactPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-nebula-blue to-galactic-purple text-center">
         <h2 className="text-4xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">Ready to Protect Your Space?</h2>
-        <p className="mt-4 text-lg text-gray-200">Contact us to see how SmartEye can enhance your security.</p>
+        <p className="mt-4 text-lg text-gray-200">Contact us to see how UsalamaAiGuard can enhance your security.</p>
         <div className="mt-8">
           <Link
             href="/demo"
@@ -205,7 +205,7 @@ export default function ContactPage() {
       <footer className="py-12 bg-space-black text-gray-400">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-2xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">SmartEye</h3>
+            <h3 className="text-2xl font-display font-bold bg-clip-text text-transparent bg-cosmic-gradient">UsalamaAiGuard</h3>
             <p className="mt-2">Empowering security with IoT innovation.</p>
           </div>
           <div>
@@ -226,7 +226,7 @@ export default function ContactPage() {
           </div>
         </div>
         <div className="mt-8 text-center border-t border-cosmic-gray pt-4">
-          <p>© 2025 SmartEye. All rights reserved.</p>
+          <p>© 2025 UsalamaAiGuard. All rights reserved.</p>
           <p className="text-sm mt-1">Crafted with vision for a safer world.</p>
         </div>
       </footer>

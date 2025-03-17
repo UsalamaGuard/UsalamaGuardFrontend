@@ -18,7 +18,7 @@ export default function CapturePage() {
             Image Capture
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-            SmartEye harnesses the power of a Raspberry Pi camera module to snap high-quality images of intruders, delivering critical visual evidence for swift security responses.
+          UsalamaAiGuard harnesses the power of a Raspberry Pi camera module to snap high-quality images of intruders, delivering critical visual evidence for swift security responses.
           </p>
         </motion.div>
 
@@ -86,7 +86,7 @@ export default function CapturePage() {
               The camera module operates at a resolution sufficient to capture detailed images even in low-light conditions, thanks to its sensitive sensor. It’s powered directly by the Raspberry Pi, requiring no external power source, which keeps the system compact and efficient. The Python script controlling the capture process is lightweight, ensuring minimal latency between detection and image storage.
             </p>
             <p>
-              SmartEye’s design prioritizes simplicity: the camera connects via a ribbon cable to the CSI port, enabling high-speed data transfer. Once captured, the image is timestamped and stored on the Raspberry Pi’s SD card, ready for attachment in an email alert or manual review.
+            UsalamaAiGuard’s design prioritizes simplicity: the camera connects via a ribbon cable to the CSI port, enabling high-speed data transfer. Once captured, the image is timestamped and stored on the Raspberry Pi’s SD card, ready for attachment in an email alert or manual review.
             </p>
           </div>
         </motion.div>
@@ -102,7 +102,7 @@ export default function CapturePage() {
             Why It Matters
           </h2>
           <p className="text-lg text-gray-300 max-w-4xl mx-auto">
-            The image capture feature empowers users with tangible proof of intrusions, making it easier to identify threats and coordinate with authorities if needed. By integrating this capability into an affordable IoT framework, SmartEye ensures that advanced security isn’t just for the elite—it’s accessible to homes, small businesses, and tech enthusiasts alike, transforming how we protect our spaces.
+            The image capture feature empowers users with tangible proof of intrusions, making it easier to identify threats and coordinate with authorities if needed. By integrating this capability into an affordable IoT framework, UsalamaAiGuard ensures that advanced security isn’t just for the elite—it’s accessible to homes, small businesses, and tech enthusiasts alike, transforming how we protect our spaces.
           </p>
         </motion.div>
 
